@@ -36,6 +36,15 @@ public abstract class SFatorialFileReader {
      * @throws IOException
      */
     public abstract void reader(String nome, int key) throws IOException;
+    
+    /**
+     * Método que realiza a escrita dos arquivos
+     *
+     * @param nome
+     * @param key
+     * @param data
+     * @throws IOException
+     */
     public abstract void writer(String nome, int key, BigInteger data) throws IOException;
     
     public int getKey() {
