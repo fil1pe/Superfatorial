@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.HashMap;
 
 public class SuperFatorialCached extends SuperFatorial {
-    protected HashMap<Integer, BigInteger> cache1 = new HashMap<>();
+    private HashMap<Integer, BigInteger> cache1 = new HashMap<>();
     private HashMap<Integer, BigInteger> cache2 = new HashMap<>();
     
     @Override
