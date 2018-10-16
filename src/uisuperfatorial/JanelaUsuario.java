@@ -8,10 +8,6 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import superfatorial.*;
 
-/**
- *
- * @author udesc
- */
 public class JanelaUsuario extends javax.swing.JFrame {
 
     /**
@@ -221,7 +217,7 @@ public class JanelaUsuario extends javax.swing.JFrame {
             if( (new MessageDigestForSFatorial()).verificaResumo() )
                 JOptionPane.showMessageDialog(rootPane, "Arquivo válido");
             else
-                JOptionPane.showMessageDialog(rootPane, "Arquivo inválido");
+                JOptionPane.showMessageDialog(rootPane, "Arquivo inválido", "", JOptionPane.ERROR_MESSAGE);
         } catch (NoSuchAlgorithmException | IOException e) {
             Logger logger = Logger.getLogger(MessageDigestForSFatorial.class.getName());
             logger.log(Level.WARNING, e.getMessage());
