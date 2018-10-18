@@ -10,7 +10,6 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class MessageDigestForSFatorial {
-
     public static final String FILE = "resource/sfatorial_resumo.txt";
 
     /**
