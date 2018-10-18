@@ -3,12 +3,6 @@ package superfatorial;
 import java.io.IOException;
 import java.math.BigInteger;
 
-/**
- * Classe base para os programas de leitura
- *
- * @author udesc
- *
- */
 public abstract class SFatorialFileReader {
 
     protected static final int KEY_INDEX = 0;
