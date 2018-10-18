@@ -73,7 +73,7 @@ public class MessageDigestForSFatorial {
      *
      * @return conteúdo de arquivo
      */
-    public StringBuffer leArquivo(String arquivo) throws IOException {
+    private StringBuffer leArquivo(String arquivo) throws IOException {
         byte[] encoded = Files.readAllBytes(Paths.get(arquivo));
         String conteudo = new String(encoded, "ISO-8859-1");
         return new StringBuffer(conteudo);
